@@ -1,0 +1,243 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    margin:0;
+
+}
+
+.container_tq{
+    transition: all .8s ease;
+}
+
+.banner_box{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    background-color: black;    
+    box-shadow: 0 8px 16px rgba(0,0,0,.12);
+    height:110px;
+    animation: expand .8s ease forwards;
+}
+
+.layout_top_banner{
+    padding: 0 50px;
+    margin: 0 auto;
+    max-width: 1270px;
+}
+
+.container_tq{
+    position: relative;
+    width:auto;
+    height:100vh;
+    background-image: url(../Image/tq_page_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x:hidden;
+}
+
+.container_topbanner{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+}
+
+.container_topbanner img{
+    padding:10px;
+    height:90px;
+    width:110px;
+}
+
+.back{
+    right:0;
+    text-decoration: none;
+    padding:15px 20px;
+    color:white;
+    background: linear-gradient(86.87deg,#116466 1.86%,#25c6c6 94.58%);
+    box-shadow: 0 4px 15px rgba(37,198,198,.55);
+    font-size: 14px;
+    border-radius: 10px;
+    margin: 4px 0 4px 150px;
+    font-weight: 600;
+}
+
+.box_tq{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(300px);
+    animation: slideUp .8s ease-in-out forwards .8s;
+    height:auto;
+    width:auto;
+    background:rgb(255, 255, 255,.7);
+    border-radius: 20px;
+    z-index: 1;
+    padding:20px;
+}
+
+
+.box_tq h1{
+    text-align: center;
+    font-size: 88px;
+    background-image: linear-gradient(-225deg,#b87b45,#c6956a 29%,#dfa976 67%,#e9d7c7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: textShine 2s linear infinite;
+}
+
+
+.box_tq img{
+    height:90px;
+    width:90px;
+
+}
+
+.box_tq p{
+    text-align: center;
+    color: black;
+    font-size: 26px;
+}
+
+.referral_link{
+    background: #111463;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 22px 0;
+
+}
+
+.referral_link a{
+    color:white;
+}
+
+.referral_link a:active{
+    color:blue;
+}
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes expand {
+    0% {
+      transform: translateX(1400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes textShine {
+    100% {
+        background-position: 200%;
+    }
+}
+
+.img_robot_tq{
+    position: absolute;
+    height:500px;
+    width:500px;
+    right:10%;
+}
+
+
+.robot_tq{
+    height:auto;
+    width:100%;
+    z-index: -0.5;
+}
+
+
+.img_robot_1{
+
+    position: absolute;
+    height:500px;
+    width:500px;
+    left:10%
+}
+  
+.robot_1{
+    height:auto;
+    width:100%;
+    z-index: -0.5;
+}
+  
+@media screen and (max-width:500px){
+
+    .banner_box.scrollable{
+        width:100%;
+    }
+    .banner_box{
+        height:80px;
+        width: 100%;
+        background-color: black;
+    }
+
+    .container_topbanner img{
+        height:70px;
+        width:90px;
+    }
+
+    .open_acc{
+        position: relative;
+        right:0;
+        text-decoration: none;
+        padding:15px 20px;
+        color:white;
+        font-size: 10px;
+        border-radius: 10px;
+        margin: 4px 0 4px 150px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .robot_1{
+        opacity:0;
+    }
+    .robot_tq{
+        opacity:0;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .container_topbanner img{
+        height:50px;
+        width:70px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .box_tq{
+        margin-top: 10px;
+    }
+
+    .box_tq h1{
+       font-size: 75px; 
+    }
+
+    .box_tq p{
+        font-size: 20px; 
+     }
+}
+
+@media screen and (max-width:353px) {
+    .back{
+        position: relative;
+        right:20%;
+    }
+}

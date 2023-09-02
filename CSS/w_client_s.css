@@ -1,0 +1,133 @@
+.w_client_s{
+    height: auto;
+    width: auto;
+    background:url(../Image/wcs_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0;
+    transform: translateX(-100%);
+    transition: all .5s;
+    padding-bottom: 200px;
+}
+
+
+.container_cont_6{
+    text-align: center;
+}
+
+.cont_6_title{
+    padding-top: 50px;
+    padding-bottom:50px;
+    font-size: 48px;
+    background-image: linear-gradient(-225deg,#b87b45,#c6956a 29%,#dfa976 67%,#e9d7c7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: textShine 2.5s linear infinite;
+}
+
+
+.robot{
+    height: 400px;
+    width:400px;
+    position: absolute;
+    top:40%;
+    left: 5px;
+}
+
+
+.container_wcs{
+    position: relative;
+    align-items: center;
+}
+
+.container_wcs .img_container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:50px;
+    justify-content: center;
+    padding:10px;
+}
+
+.container_wcs .img_container .img_r{
+    height:262px;
+    width:125px;
+    border:7px solid white;
+    box-shadow: 0 5px 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container_wcs .img_container .img_r img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+
+.container_wcs .popup_img{
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.9);
+    height:100%;
+    width:100%;
+    z-index: 100;
+    display:none;
+}
+
+.container_wcs .popup_img span{
+    position: absolute;
+    top:0;
+    right:10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color:white;
+    cursor:pointer;
+}
+
+.container_wcs .popup_img img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid white;
+    border-radius: 5px;
+    width:300px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1400px) {
+    .robot{
+        display:none;
+    }
+}
+
+.show_2{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.tq_t{
+    color:white;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+@media screen and (max-width:720px) {
+    .cont_6_title{
+        font-size: 30px;
+    }
+}
+
+
+
+@media screen and (max-width:450px){
+    .cont_6_title{
+        font-size: 20px;
+    }
+}

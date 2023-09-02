@@ -1,0 +1,302 @@
+.content_1{
+    margin-top: 50px;
+    display: block;
+    background-image: url(../Image/cont1_bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:auto;
+    width:auto;
+    padding-bottom: 100px;
+    overflow-x:hidden;
+}
+
+.layout_content1{
+    max-width: 1240px;
+    margin:0 auto;
+    padding-top: 50px;
+}
+
+.cont1_container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont1_content{
+    position:relative;
+    max-width: 510px;
+}
+
+.cont1_content h1{
+    font-size:70px;
+    line-height: 96px;
+    background-image: linear-gradient(-225deg,#b87b45,#c6956a 29%,#dfa976 67%,#e9d7c7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: textShine 2s linear infinite;
+}
+
+.big_h1{
+    font-size: 110px;
+}
+
+.cont1_content p{
+    margin:0;
+    font-weight:700;
+    font-size: 22px;
+    line-height: 1.25;
+    color:white;
+}
+
+.cont1_deco .multi2{
+    position: absolute;
+    left: 45%;
+    top: 250px;
+    height:291px;
+    width:290px;
+}
+
+.cont1_contactform{
+    padding:10px;
+    position: relative;
+    border-radius: 20px;
+    height:560px;
+}
+
+.cont1_contactform h3{
+    padding-top: 30px;
+    text-align: center;
+    color:white;
+}
+
+.cont1_contactform form{
+    display:flex;
+    flex-direction: column;
+    width:400px;
+}
+
+.form_label{
+    font-size: 22px;
+    color:white;
+    font-weight: bold;
+}
+
+.phonenumb{
+    display:flex;
+    justify-content: center;
+}
+
+.form-select{
+    width: 65%;
+    padding:8px;
+    margin: 5px 0;
+    border:2px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size:16px;
+}
+
+.input_box_1{
+    width: 100%;
+    padding:8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border:2px solid black;
+    cursor: pointer;
+    font-size:16px;
+    outline:none;
+}
+
+.input_box_1:focus{
+    border-color: #0328fc;
+    box-shadow: 0 0 8px 0 #0328fc;
+}
+
+.input_box_p1{
+    width: 100%;
+    padding:8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border:2px solid black;
+    cursor: pointer;
+    font-size:16px;
+    outline:none;
+}
+
+.input_box_p1:focus{
+    border-color: #0328fc;
+    box-shadow: 0 0 8px 0 #0328fc;
+}
+
+select:focus{
+    border-color: #0328fc;
+    box-shadow: 0 0 8px 0 #0328fc;
+}
+
+.form-control{
+    width: 100%;
+    padding:8px;
+    margin: 5px 0;
+    border:2px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size:16px;
+}
+
+.submit_1{
+    width:250px;
+    height:40px;
+    margin-left: 75px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: linear-gradient(86.87deg,#cd9564 1.86%,#ffcb9a 94.58%);
+    border:none;
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+    animation: blink 1s linear infinite;
+    cursor:pointer;
+}
+
+@keyframes textShine {
+    100% {
+        background-position: 200%;
+    }
+}
+
+@keyframes blink {
+    50%{
+        opacity: 0.3;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .big_h1{
+        font-size:90px;
+    }
+    .cont1_content h1{
+        font-size: 60px;
+    }
+}
+
+
+@media screen and (max-width:868px) {
+    .cont1_container{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cont1_content{
+        width:450px;
+        margin-left: 70px;
+    
+    }
+
+    .cont1_content h1{
+        font-size: 55px;
+        line-height: normal;
+    }
+    .big_h1{
+        font-size: 75px;
+    }
+
+    .cont1_content p{
+        width:325px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cont1_content{
+        width:400px;
+        margin-left: 105px;
+    }
+    .cont1_content h1{
+        font-size: 45px;
+        width:auto;
+    }
+    .big_h1{
+        font-size: 65px;
+    }
+    
+    .submit_1{
+        width:200px;
+        height:45px;
+    }
+
+    .cont1_contactform{
+        position: relative;
+    }
+}
+
+
+
+@media screen and (max-width:459px) {
+    .cont1_contactform h3{
+        position: relative;
+        text-align: left;
+        left:20%;
+    }
+
+   .input_box_1{
+        width:80%;
+    }
+
+    .form-select{
+        width:40%;
+
+    }
+
+    .phonenumb .input_box_p1{
+        width:40%;
+        margin-right:80px;
+    }
+
+    .form-control{
+        width:80%;
+    }
+
+    .submit_1{
+        position: relative;
+        right:25px;
+    }
+
+    .cont1_contactform{
+        position: relative;
+        left:10%;
+    }
+}
+
+@media screen and (max-width:358px) {
+    .input_box_1{
+        width:75%;
+    }
+
+    .form-control{
+        width:75%;
+    }
+
+    .phonenumb .input_box_p1{
+        width:35%;
+        margin-right:100px;
+    }
+
+    .cont1_contactform{
+        position: relative;
+        left:17%;
+    }
+
+    .big_h1{
+        font-size:65px;
+    }
+    .cont1_content h1{
+        font-size: 40px;
+
+    }
+}

@@ -1,0 +1,138 @@
+.content3{
+    height:700px;
+    width:auto;
+    background-color: black;
+    opacity:0;
+    transform: translateY(65%);
+    transition: all .5s;
+    overflow-x: hidden;
+}
+
+.layout_content3{
+    max-width: 1240px;
+    margin:0 auto;
+}
+
+.header_desc{
+    padding-top: 20px;
+    color:white;
+}
+
+.header_desc h1{
+    font-size: 30px;
+    background-image: linear-gradient(-225deg,#b87b45,#c6956a 29%,#dfa976 67%,#e9d7c7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: textShine 2s linear infinite;
+}
+
+.header_desc p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container_card{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:15px;
+
+}
+
+.container_card .card{
+    position:relative;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    width:350px;
+    height:350px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.container_card .card:hover{
+    height:400px;
+}
+
+.container_card .card .img_card{
+    position: absolute;
+    top:20px;
+    width:300px;
+    height:220px;
+    background-color: #111463;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.container_card .card:hover .img_card{
+    top:-100px;
+    scale:0.75
+}
+
+.container_card .card .img_card img{
+    height:125px;
+    width:auto;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 70px;;
+}
+
+.container_card .card .content_card{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding:0 30px;
+    top:250px;
+    color:black;
+}
+
+.container_card .card .content_card p{
+    opacity:0;
+}
+
+.container_card .card:hover .content_card p{
+    opacity:1;
+    font-weight: 600;
+}
+
+.show1{
+    opacity: 1;
+    transform:translateY(0);
+}
+
+@media screen and (min-width:375px){
+    .header_desc h1{
+        font-size: 33px;
+    }
+}
+
+@media screen and (min-width:450px){
+    .header_desc h1{
+        font-size: 38px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .header_desc h1{
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width:1084px){
+    .content3{
+        height:1500px;
+    }
+
+    .container_card{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

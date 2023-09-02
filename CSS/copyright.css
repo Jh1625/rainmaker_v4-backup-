@@ -1,0 +1,60 @@
+.copyright{
+    height:auto;
+    width:auto;
+    background: linear-gradient(266.24deg,#25c6c6 .53%,#0a0d25 98.01%);
+    overflow-x: hidden;
+}
+
+.layout_copyright{
+    max-width: 1240px;
+    margin: auto;
+}
+
+.copyright_logo{
+    width:89px;
+    height:80px;
+    margin-top: 50px;
+}
+
+.container_c{
+    width:auto;
+    position: relative;
+    font-size: 13px;
+}
+
+.content_c{
+    display:flex;
+}
+
+.img_c{
+    position: relative;
+    margin-top: 5px;
+    margin-left: 40x;
+    left:1%;
+}
+
+.content_c_2 p{
+    color:white;
+    margin-left: 40px;
+}
+
+.content_c p{
+    color:white;
+}
+
+.content_cp{
+    margin-left: 15px;
+}
+
+.copyright_logo_c{
+    text-align: center;
+    color:white;
+    font-size:13px;
+}
+
+.warning{
+    color:white;
+    font-size: 13px;
+    margin:0 auto;
+    text-align: center;
+}

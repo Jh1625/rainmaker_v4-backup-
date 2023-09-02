@@ -1,0 +1,95 @@
+.awards_a{
+    margin-top: 30px;
+    height:auto;
+    width:auto;
+    overflow-x: hidden;
+}
+
+.layout_aa{
+    max-width: 1240px;
+    margin:0 auto;
+}
+
+.title_container{
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width:840px;
+    margin:0 auto;
+}
+
+.animate_h1{
+    background-image: linear-gradient(-225deg,#b87b45,#c6956a 29%,#dfa976 67%,#e9d7c7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: textShine 2s linear infinite;
+}
+
+.title_aa{
+    text-align: center;
+    font-size: 60px;
+}
+
+.slider{
+    height:250px;
+    margin:auto;
+    position: relative;
+    width:90%;
+    display:grid;
+    place-items: center;
+}
+
+.slider_track{
+    display:flex;
+    width: calc(250px * 18);
+    animation:  scroll 40s linear infinite;
+}
+
+.slide{
+    height:100px;
+    width:250px;
+    display: flex;
+    align-items: center;
+    padding:50px;
+}
+
+.slide img{
+    width:100%;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+@media screen and (max-width:467px){
+    .title_aa{
+        font-size: 48px;
+    }    
+}
+
+@media screen and (max-width:363px){
+    .title_aa{
+        font-size: 42px;
+
+    }    
+}
+
+@media screen and (max-width:1025px){
+    .title_container{
+        margin:0 auto;
+    }
+}
+
+@media screen and (max-width:330px){
+    .title_container{
+        margin:0 auto;
+    }
+}
